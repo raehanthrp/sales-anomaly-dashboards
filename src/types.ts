@@ -11,6 +11,7 @@ export interface IncidentNote {
   date: string;
   note: string;
   createdAt: string;
+  updatedAt?: string;
 }
 
 export interface AnomalyPredictionRequest {

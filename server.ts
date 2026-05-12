@@ -30,7 +30,7 @@ async function startServer() {
       const isf = new IsolationForest({ nEstimators: 100, maxSamples: 'auto' });
       isf.train(features);
       
-      const scores = isf.getScores(features);
+      const scores = isf.predict(features);
 
       const result = data.map((d: SalesDataPoint, i: number) => ({
         ...d,
